@@ -34,6 +34,7 @@
       <div class="mx-auto max-w-screen-md px-4 py-3 flex items-center justify-between">
         <a href="#home" class="flex items-center gap-3">
           <img src="assets/svg/finchy-purple.svg" alt="Finchy" class="h-7 w-auto" />
+          <p class="font-medium text-[#6366F1]">finchy</p>
         </a>
         <nav class="flex items-center gap-4 text-sm">
           <a href="#features" class="text-slate-600 hover:text-slate-900">Features</a>
@@ -75,9 +76,9 @@
 
           <!-- Product media: 3 equal columns, images slightly shorter than video -->
           <div class="mt-12">
-            <div class="grid grid-cols-3 gap-4 items-stretch">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-stretch">
               <!-- Left screenshot -->
-              <div class="flex items-center justify-end">
+              <div class="hidden md:flex items-center justify-end">
                 <img
                   src="assets/jpeg/home-screen.jpeg"
                   alt="Finchy home screen"
@@ -89,7 +90,7 @@
               <!-- Center video -->
               <div class="flex items-center justify-center">
                 <video
-                  class="h-[600px] object-cover rounded-2xl border border-slate-200 shadow-sm"
+                  class="h-64 h-[600px] object-cover rounded-2xl border border-slate-200 shadow-sm"
                   src="assets/mp4/tutorial.mp4"
                   autoplay
                   muted
@@ -101,7 +102,7 @@
               </div>
 
               <!-- Right screenshot -->
-              <div class="flex items-center justify-start">
+              <div class="hidden md:flex items-center justify-start">
                 <img
                   src="assets/jpeg/subscriptions.jpeg"
                   alt="Finchy subscriptions screen"
